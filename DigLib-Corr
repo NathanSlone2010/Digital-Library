@@ -1,0 +1,81 @@
+print("Welcome to THE ARCHIVE OF LITERATURE.")
+print("The long-term project of Nathan T. Slone")
+print("WebVers 04.04.05")
+#The above are the introduction section.
+
+
+print("\n This is a Library of Philosophical, Historical, and Political books... The below selections are the only current selections available | More being listed soon.")
+#This is the list of subjects section.
+
+
+name = input("\n Enter your name: ")
+print("\n \n Welcome, " + name)
+#This section allows the user to input their name.
+
+
+print("\n Select one option: ")
+print("\n Das-Kapital [DK], 48 Laws of Power [FLP], State & Revolution [SR], Metro 2033 [M], Crime & Punishment [CAP], Requiem For The Conquerer [RC], The Sum of All Fears [TSA], War of the Raven [WR], Powerless [PL]")
+#This section is a list of the books with their acronym (as indicated by "[]") to pull their information successfully.
+
+
+print ("\n \n Developer Mode [DEV] & Production Notes [PROD] will require a password.")
+#The DEV mode & Producer Notes password requirement warning.
+
+
+print("\n Please input selection:")
+#This area allows them to do input. They can do it without the area, but it is for clear instruction.
+
+
+Document=input()
+
+if Document.upper() == "DK":
+    print("\n Das Kapital Volume I  | Author: Karl Marx | Page: 1,152 | Date of Release: September -4. 1867 | Importance: Started the Communist Ideology, inspired the Bolshevik Revolution of Russia, and the founding ideology of the Union of Soviet Socialist Republics.")
+
+if Document.upper() == "FLP":
+    print("\n 48 Laws of Power | Author: Robert Greene | Page: 452 | Date of Release: 1998 | Importance: Known as one of the most evil books of the current world to some, known as the most important self-defense book to others. It can train a person on how to manipulate and train others on how to defend from it.")
+
+if Document.upper() == "SR":
+    print("\n State & Revolution | Author Vladimir I. Lenin | Page: 101 | Date of Release: 1917 | Importance: One of the later writings of the Revolutionary leader and created of the Marxism-Leninism ideology. This was used as a philosophical reasoning to support Democratic Centralism, Vanguard Party, and Revolution.")
+
+if Document.upper() == "M":
+    print("\n Metro 2033 | Author: Dmitry Glukhovsky | Page: 459 | Date of Release: March 16, 2010 | Importance: In 2010, upon release, it was known as a great book, renowned across the world. It directly inspired and relates to the video game series called Metro 2033, Metro Last Light, Metro Exodus, MetroVR, and as of 2025, an unknown developing game.")
+
+if Document.upper() == "CAP":
+    print("\n Crime & Punishment | Author: Fyodor Dostoyevsky | Page: 550 | Date of Release: 1867 | Importance: Among 1800s and early 1900s, it was renown and a cult-classic. Even to this day, it still is. Dostoyevsky's name lives on through this book as it's among one of his most popular. It also changed the whole landscape of philosophy and religion.")
+
+if Document.upper() == "RC":
+    print("\n Requiem For The Conqueror: Forbidden Borders Volume I | Author: W. Michael. Gear | Page: 622 | Date of Release: 1991 | Importance: It is renowned as one of the best Sci-Fi books of it's time.")
+
+if Document.upper() == "TSA":
+    print("\n The Sum of All Fears | Author: Tom Clancy | Page: 914 | Date of Release: 1991 | Importance: It is known as the founder of the tactical video games made by Ubisoft, the most well known and most renowned is the Rainbow Six series.")
+
+if Document.upper() == "WR":
+    print("\n War of the Raven | Author Andrew Kaplan | Page: 411 | Date of Release: 1989 | Importance: It is renowned for being one of the best fictional stories set in World War 2, following a spy, Raven, and their murder.")
+
+if Document.upper() == "PL":
+    print("\n Powerless [book 1 of 3] | Author: Lauren Roberts | Page: 528 | Date of Release: 2023 | Importance: Within the genre, it's known as one of the most important books. Although niche, it has a rapidly growing fanbase.")
+#This section above is the option.
+
+
+if Document.upper() == "DEV":
+    password = input("\n Enter developer password: ")
+    if password == "ARC":
+        print("\n DEVELOPER ONLY || Add the Powerless and Fearless book.")
+    else:
+        print("\n ACCESS DENIED || Invalid password.")
+#This section is for Developer Mode, which will list a note for the Developer themself.
+
+
+if Document.upper() == "PROD":
+    password = input("\n Enter Password: ")
+if password == "Production":
+    print("\n \n Production Notes || Updated code to have identifiers for what the reason for each block of code")
+else:
+    print("\n Production Notes password has been entered incorrectly.")
+#This section is for an update log.
+
+
+
+if Document.upper() not in ["DK", "FLP", "SR", "M", "CAP", "RC", "TSA", "WR", "DEV", "PL", "PROD"]:
+    print("Invalid selection or Invalid Password, please restart the machine, and select the options listed above.")
+#This is so we can list out an error svreen when they select anything but whats available.
