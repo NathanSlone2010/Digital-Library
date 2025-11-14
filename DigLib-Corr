@@ -1,6 +1,6 @@
 print("Welcome to The Onix Library.")
 print("The long-term project of Nathan T. Slone")
-print("WebVers 04.05.05")
+print("WebVers 04.05.06")
 #The above are the introduction section.
 
 
@@ -18,8 +18,8 @@ print("\n Das-Kapital [DK], 48 Laws of Power [FLP], State & Revolution [SR], Met
 #This section is a list of the books with their acronym (as indicated by "[]") to pull their information successfully.
 
 
-print ("\n \n Developer Mode [DEV] & Production Notes [PROD] will require a password.")
-#The DEV mode & Producer Notes password requirement warning.
+print ("\n \n Developer Mode [DEV] will require a password.")
+#The DEV mode password requirement warning.
 
 
 print("\n Please input selection:")
@@ -64,15 +64,6 @@ if Document.upper() == "DEV":
     else:
         print("\n ACCESS DENIED || Invalid password.")
 #This section is for Developer Mode, which will list a note for the Developer themself.
-
-
-if Document.upper() == "PROD":
-    password = input("\n Enter Password: ")
-if password == "Production":
-    print("\n \n Production Notes || Updated code to have identifiers for what the reason for each block of code")
-else:
-    print("\n Production Notes password has been entered incorrectly.")
-#This section is for an update log.
 
 
 
