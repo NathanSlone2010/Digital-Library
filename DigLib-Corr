@@ -67,6 +67,6 @@ if Document.upper() == "DEV":
 
 
 
-if Document.upper() not in ["DK", "FLP", "SR", "M", "CAP", "RC", "TSA", "WR", "DEV", "PL", "PROD"]:
+if Document.upper() not in ["DK", "FLP", "SR", "M", "CAP", "RC", "TSA", "WR", "DEV", "PL"]:
     print("Invalid selection or Invalid Password, please restart the machine, and select the options listed above.")
 #This is so we can list out an error svreen when they select anything but whats available.
