@@ -1,10 +1,10 @@
 print("Welcome to The Onix Library.")
 print("The long-term project of Nathan T. Slone")
-print("WebVers 04.05.06")
+print("\n WebVers 04.07.06")
 #The above are the introduction section.
 
 
-print("\n This is a Library of Philosophical, Historical, and Political books... The below selections are the only current selections available | More being listed soon.")
+print("\n This is a Library of All.. The below selections are the only current selections available | More being listed soon.")
 #This is the list of subjects section.
 
 
@@ -15,15 +15,11 @@ print("\n \n Welcome, " + name)
 
 print("\n Select one option: ")
 print("\n Das-Kapital [DK], 48 Laws of Power [FLP], State & Revolution [SR], Metro 2033 [M], Crime & Punishment [CAP], Requiem For The Conquerer [RC], The Sum of All Fears [TSA], War of the Raven [WR], Powerless [PL]")
-#This section is a list of the books with their acronym (as indicated by "[]") to pull their information successfully.
-
-
-print ("\n \n Developer Mode [DEV] will require a password.")
-#The DEV mode password requirement warning.
+#This section is a list of the books with their acronym.
 
 
 print("\n Please input selection:")
-#This area allows them to do input. They can do it without the area, but it is for clear instruction.
+#This area allows them to do input
 
 
 Document=input()
@@ -57,16 +53,7 @@ if Document.upper() == "PL":
 #This section above is the option.
 
 
-if Document.upper() == "DEV":
-    password = input("\n Enter developer password: ")
-    if password == "ARC":
-        print("\n DEVELOPER ONLY || Add the Powerless and Fearless book.")
-    else:
-        print("\n ACCESS DENIED || Invalid password.")
-#This section is for Developer Mode, which will list a note for the Developer themself.
 
-
-
-if Document.upper() not in ["DK", "FLP", "SR", "M", "CAP", "RC", "TSA", "WR", "DEV", "PL"]:
+if Document.upper() not in ["DK", "FLP", "SR", "M", "CAP", "RC", "TSA", "WR", "PL"]:
     print("Invalid selection or Invalid Password, please restart the machine, and select the options listed above.")
-#This is so we can list out an error svreen when they select anything but whats available.
+#This is so we can list out an error screen when they select anything but whats available.
